@@ -1,0 +1,262 @@
+/* Here CSS for 'Home' page */
+body {
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle, #1F4721, #143214, #0A1E0A); 
+} 
+
+.nav-link{
+    color: #50361b;
+    font-weight: bold;  
+}
+
+/* Hero banner style */
+.hero {
+  background-image: url('../img/onca4ia.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: #F5E6D3;
+  display: flex;
+  align-items: center;   
+  box-shadow: 0 4px 8px 0 rgba(186, 185, 185, 0.2), 0 6px 20px 0 rgba(158, 158, 158, 0.19);           
+}
+
+.hero-content { 
+  text-align: right;
+  margin-left: auto;
+  padding: 0 30px;
+  text-align: center;
+}
+.hero-title{
+    color: #F5E6D3;
+    font-size: 8rem;
+}
+
+.hero p {
+    color: #F5E6D3;
+    font-size: 3rem;
+}
+
+.hero-content a.btn {
+    margin-top: 20px;
+    color: #F5E6D3;
+    background-color: #50361b;
+    border: #F5E6D3;
+    box-shadow: 0 4px 8px 0 rgba(186, 185, 185, 0.2), 0 6px 20px 0 rgba(158, 158, 158, 0.19);
+}
+
+/* Responsive */
+@media (max-width: 992px){ /* Tablet */
+    .hero {
+        min-height: 70vh;
+        padding: 3rem 1.5rem;
+    }
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1.5rem !important; /* Prioritises*/
+    }
+}
+
+@media (max-width: 576px){ /* Mobile */
+    .hero{
+        min-height: 60vh;
+        padding: 1rem 1rem;
+    }
+    .hero-title{
+        font-size: 1.5rem; /* Reduces the title */
+    }
+
+    /* Important to priorise because of the responsiveness */
+    .hero p {
+        font-size: 1rem !important; 
+    }
+    .btn-lg {
+        font-size: 1rem !important;
+        padding: 0.6rem 1.2rem !important;
+    }
+}
+
+.intro {
+    color: #F5E6D3;
+    margin: 0 auto; 
+    text-align: center;
+    background-color: radial-gradient(circle, #1F4721, #143214, #0A1E0A);;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;   
+}
+
+.intro p{
+    font-size: 1.5rem;
+}
+
+/* Line style */
+hr {
+    border: none;              
+    height: 2px;               
+    background-color: #F5E6D3;
+    margin: 0 80px;
+}
+
+.card {
+    background-color: #f8f9fa;
+    overflow: hidden; /* Prevents the items from exceeding*/
+    box-shadow: 0 4px 8px 0 rgba(186, 185, 185, 0.2), 0 6px 20px 0 rgba(158, 158, 158, 0.19);
+}
+
+.cards h2 {
+    color: #F5E6D3;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Image over the card */
+.card-img-top {
+    height: 250px;
+}
+
+/* Zoom when pass the mouse */
+.card:hover { 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.1);
+}
+
+.card-title{
+    color: #50361b;
+    font-weight: 700;
+}
+
+.card-text {
+color: #50361b;
+}
+
+/* Buttons style (card and submit) */
+.btn {
+    margin-top: 5px;
+    background-color: #143214;
+    border: none;
+}
+
+/* Here CSS for 'Destinations' page */
+
+.hero-destinations {
+    background: url('../img/bluelake2.jpg');
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    height: 50vh;
+    box-shadow: 0 4px 8px 0 rgba(186, 185, 185, 0.2), 0 6px 20px 0 rgba(158, 158, 158, 0.19); 
+    position: relative;
+}
+
+/* Effect on the image to make the text easier to read. */
+.hero-destinations .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; 
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-destinations .content {
+  text-align: center;
+  color: #F5E6D3;
+  padding: 50px 30px 0;
+  z-index: 2;  
+}
+
+/* Title before the cards style (h2) */
+#packages {
+    color: #F5E6D3;
+    font-size: 2rem;
+    text-align: center;
+    background-color: transparent;
+    width: 100%;
+}
+
+.card{
+    position: relative;
+}
+
+/* Planned to make the prices over the image card but I quit for now. 
+.card-title-overlay{
+    position: absolute;
+    color: #F5E6D3;
+    top: 180px;
+    left: 25px;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}*/
+
+.card h4{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color:#1F4721;
+    padding: 0;
+}
+
+#Enjoy{
+    padding-top: 50px;
+    justify-content: center;
+    text-align: center;
+    color:#F5E6D3;
+    font-size: 1rem;
+}
+
+/* Here CSS for 'Contact Us' page */
+
+.container h2{
+    color:#F5E6D3;
+    padding: 20px ;
+    text-align: center;
+}
+
+.contactUsText{
+    color: #F5E6D3;
+    line-height: 1.5;
+    font-size:large;
+    width: 100%;
+    text-align: center;
+}
+
+.row {
+    color: #F5E6D3;
+}
+
+/* Efeect */
+.form-row-shadow{
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(186, 185, 185, 0.2), 0 6px 20px 0 rgba(158, 158, 158, 0.19);
+}
+
+.banner_adventure{
+    background-image: url('../img/jaguar.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(186, 185, 185, 0.2), 0 6px 20px 0 rgba(158, 158, 158, 0.19); 
+    border-radius: 12px;
+}
+
+/* Styele for the alert message */
+#successMessage{
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    min-height: 120px;
+    justify-content: center;
+    align-items: center;
+    display: flex;   
+}
